@@ -9,9 +9,8 @@
 <body>
   <div class="login-container">
     <!-- Registration Form -->
-    <div class="login-box">
+   <div id="register">
       <h2>Register</h2>
-            <form id="loginForm">
         <div class="input-group">
           <label for="username">Username</label>
       <input type="text" id="regUsername" placeholder="Username" />
@@ -29,9 +28,8 @@
   
 
     <!-- Login Form -->
-    <div class="login-box">
+    <div id="login" style="display:none;">
       <h2>Login</h2>
-            <form id="loginForm">
         <div class="input-group">
           <label for="username">Username</label>
       <input type="text" id="loginUsername" placeholder="Username" />
@@ -44,7 +42,7 @@
       <div class="link">Don't have an account? <a onclick="showRegister()">Register</a></div>
     </div>
     <!-- Dashboard -->
-    <div class="login-box">
+     <div id="dashboard" style="display:none;">
       <h2>Dashboard</h2>
       <p>Welcome, <span id="welcomeUser"></span>!</p>
       <table>

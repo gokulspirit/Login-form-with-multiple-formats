@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-       <div class="login-box">
+    
     <!-- Registration Form -->
+         <div class="login-container">
+    <div class="login-box">
     <div id="register">
       <h2>Register</h2>
       <input type="text" id="regUsername" placeholder="Username" />
@@ -18,18 +19,31 @@
       <button onclick="register()">Register</button>
       <div class="link">Already have an account? <a onclick="showLogin()">Login</a></div>
     </div>
+         </div>
+  </div>
 
     <!-- Login Form -->
-    <div id="login" style="display:none;">
+      <div class="login-container">
+    <div class="login-box">
       <h2>Login</h2>
-      <input type="text" id="loginUsername" placeholder="Username" />
-      <input type="password" id="loginPassword" placeholder="Password" />
-      <button onclick="login()">Login</button>
-      <div class="link">Don't have an account? <a onclick="showRegister()">Register</a></div>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
     </div>
+  </div>
 
     <!-- Dashboard -->
     <div id="dashboard" style="display:none;">
+      <div class="login-container">
+    <div class="login-box">
       <h2>Dashboard</h2>
       <p>Welcome, <span id="welcomeUser"></span>!</p>
       <table>
@@ -44,6 +58,8 @@
       </table>
       <button id="logoutBtn" onclick="logout()">Logout</button>
     </div>
+  </div>
+      </div>
   </div>
 
   <script src="script.js"></script>

@@ -18,164 +18,12 @@ body {
   animation: bgMove 30s linear infinite;
 }
 
-/* Background movement */
 @keyframes bgMove {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 10% 10%;
-  }
-  100% {
-    background-position: 0 0;
-  }
+  0% { background-position: 0 0; }
+  50% { background-position: 10% 10%; }
+  100% { background-position: 0 0; }
 }
 
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 20px;
-}
-
-.login-box {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-  padding: 40px 35px;
-  width: 100%;
-  max-width: 400px;
-  color: #ccc;
-  animation: slideIn 1s ease forwards;
-  transition: all 0.4s ease-in-out;
-}
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.login-box h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: 600;
-  color: #ccc;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
-
-.input-group {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group label {
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-  color: #e0e0e0;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-}
-
-.input-group input {
-  padding: 12px 14px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.1);
-  color: #ccc;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  outline: none;
-  backdrop-filter: blur(6px);
-}
-
-.input-group input::placeholder {
-  color: #ccc;
-}
-
-.input-group input:focus {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-  transform: scale(1.02);
-}
-
-/* Blended Login Button */
-button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 12px;
-  color: #ffffff;
-  font-size: 1rem;
-  cursor: pointer;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: all 0.4s ease;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0), 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-  background: rgba(255, 255, 255, 0.18);
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.03);
-}
-
-/* Footer */
-footer {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  color: #ddd;
-  font-size: 0.85rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}​@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-  overflow: hidden;
-}
-
-body {
-  background: url('https://i.postimg.cc/xTmnzrJX/mountain-with-lake-ai-generate-photo.jpg') repeat;
-  background-size: cover;
-  animation: bgMove 30s linear infinite;
-}
-
-/* Background movement */
-@keyframes bgMove {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 10% 10%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-/* Center container */
 .login-container {
   display: flex;
   justify-content: center;
@@ -185,7 +33,6 @@ body {
   backdrop-filter: blur(5px);
 }
 
-/* Login box with glassmorphism */
 .login-box {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -201,16 +48,9 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-/* Slide-in animation */
 @keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .login-box h2 {
@@ -257,7 +97,6 @@ body {
   transform: scale(1.02);
 }
 
-/* Blended login button */
 button {
   width: 100%;
   padding: 12px;
@@ -281,154 +120,6 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
-/* Optional footer */
-footer {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  color: #ddd;
-  font-size: 0.85rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}​@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-  overflow: hidden;
-}
-
-body {
-  background: url('https://i.postimg.cc/xTmnzrJX/mountain-with-lake-ai-generate-photo.jpg') repeat;
-  background-size: cover;
-  animation: bgMove 30s linear infinite;
-}
-
-/* Background movement */
-@keyframes bgMove {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 10% 10%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-/* Center container */
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 20px;
-  backdrop-filter: blur(5px);
-}
-
-/* Login box with glassmorphism */
-.login-box {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  padding: 40px 35px;
-  width: 100%;
-  max-width: 400px;
-  color: #fff;
-  animation: slideIn 1s ease forwards;
-  transition: all 0.4s ease-in-out;
-}
-
-/* Fade and slide in */
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.login-box h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
-
-.input-group {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group label {
-  font-size: 0.9rem;
-  margin-bottom: 6px;
-  color: #e0e0e0;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
-}
-
-.input-group input {
-  padding: 12px 14px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  outline: none;
-}
-
-.input-group input::placeholder {
-  color: #ccc;
-}
-
-.input-group input:focus {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-  transform: scale(1.02);
-}
-
-/* Button styling */
-button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 12px;
-  color: #ffffff;
-  font-size: 1rem;
-  cursor: pointer;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: all 0.4s ease;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0), 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-button:hover {
-  background: rgba(255, 255, 255, 0.18);
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3), 0 6px 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.03);
-}
-
-/* Optional footer */
 footer {
   position: absolute;
   bottom: 10px;
@@ -438,6 +129,3 @@ footer {
   font-size: 0.85rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
-
-
-

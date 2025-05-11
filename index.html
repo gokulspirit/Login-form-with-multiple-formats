@@ -24,10 +24,40 @@ h2 {
 .link a:hover {
   color: #333; /* optional darker hover effect */
 }
+    .table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+table th {
+  background-color: #333;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
     </style>
 </head>
 <body>
   <div class="login-container">
+    <div class="login-box">
     <!-- Registration Form -->
    <div id="register">
       <h2>Register</h2>
@@ -45,6 +75,7 @@ h2 {
               </form>
       <div class="link">Already have an account? <a onclick="showLogin()">Login</a></div>
     </div>
+    
   
 
     <!-- Login Form -->
@@ -62,22 +93,28 @@ h2 {
       <div class="link">Don't have an account? <a onclick="showRegister()">Register</a></div>
     </div>
     <!-- Dashboard -->
-     <div id="dashboard" style="display:none;">
-      <h2>Dashboard</h2>
-      <p>Welcome, <span id="welcomeUser"></span>!</p>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Username</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody id="userTable"></tbody>
-      </table>
-      <button id="logoutBtn" onclick="logout()">Logout</button>
+     <div id="dashboard" style="display:none;" class="dashboard-container">
+  <h2>Dashboard</h2>
+  <p>Welcome, <span id="welcomeUser"></span>!</p>
+
+  <div class="input-group">
+      <label>ID:</label>
+      <p id="userId"></p>
     </div>
+    <div class="input-group">
+      <label>Username:</label>
+      <p id="userUsername"></p>
     </div>
+    <div class="input-group">
+      <label>Email:</label>
+      <p id="userEmail"></p>
+    </div>
+
+
+  <button id="logoutBtn" onclick="logout()">Logout</button>
+</div>
+    </div>
+  </div>
 
   <footer>© 2025 Your Company</footer>
 

@@ -440,20 +440,4 @@ footer {
 }
 
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff;
-}
-.link {
-  color: white;
-}
 
-.link a {
-  color: black;
-  text-decoration: none;
-}
-
-.link a:hover {
-  color: #333; /* optional darker hover effect */
-}

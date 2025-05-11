@@ -72,19 +72,11 @@ function loadDashboard() {
   showDashboard();
   document.getElementById("welcomeUser").textContent = loggedInUser.username;
 
-  const users = JSON.parse(localStorage.getItem("users")) || [];
-  const tableBody = document.getElementById("userTable");
-  tableBody.innerHTML = "";
-
-  users.forEach(user => {
-    const row = `<tr>
-      <td>${user.id}</td>
-      <td>${user.username}</td>
-      <td>${user.email}</td>
-    </tr>`;
-    tableBody.innerHTML += row;
-  });
-}
+  // Inject data into non-table format
+  document.getElementById("userId").textContent = loggedInUser.id;
+  document.getElementById("userUsername").textContent = loggedInUser.username;
+  document.getElementById("userEmail").textContent = loggedInUser.email;
+};
 
 function logout() {
   localStorage.removeItem("loggedInUser");
